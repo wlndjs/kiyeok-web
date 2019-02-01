@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Song+Myung');
+  .title{
+    text-align: center;
+    margin-top:20px;margin-bottom: 20px;
+    font-size:70px;
+    font-family: 'Song Myung', serif;
+    font-weight:300px;
+    cursor:url(cursor.cur),wait;
+    display:block;
+    z-index: -1;
+  }
+  a{
+    text-decoration: none;
+    color:black;cursor:url(cursor.cur),wait;
+  }
+  .circle1,.circle2,.circle3{
+    animation-duration: 7s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    position:fixed;
+    z-index: 1;}
+  .circle1{
+    position:fixed;
+    top:60px;
+    left:25px;
+  }
+  .circle2{
+    animation-delay:2s;
+    position:fixed;
+    left:225px;
+  }
+  .circle3{
+    animation-delay:1.2s;
+    position:fixed;
+    left:450px;
+  }
+    @keyframes bounce{
+      0% {
+        margin-top:0px;
+      }
+      50%{
+        margin-top:550px;
+      }
+      100%{
+        margin-top:0px;
+      }
+    }
+  .category div{
+    cursor:url(cursor.cur),wait;
+    font-size: 30px;
+    font-family: 'Song Myung', serif;
+    }
+  .category div:hover{  color:#7fff00  }
+  p{
+  cursor:url(cursor.cur),wait;
+  word-break:break-all;
+  font-size:60px;
+  margin-left:220px;
+  margin-right:220px;
+  margin-top: 20px;
+  line-height: 120%;
+  padding:20px;
+  font-family: 'Song Myung', serif;
+  }
+  @media(max-width:600px){
+  p{
+    word-break:break-all;
+    font-size:40px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top: 10px;
+    padding:20px;
+    font-family: 'Song Myung', serif;
+  }
+  #category {
+    font-size: 20px;
+    font-family: 'Song Myung', serif;
+    color:blak;
+    }
+}
+</style>
+<body>
+  <img src="circle_1.png"width="20%"class="circle1">
+  <img src="circle_1.png"width="20%"class="circle2">
+  <img src="circle_1.png"width="20%"class="circle3">
+  <div class="title">글과점</div>
+  <div style="width:100%; text-align:center" class="category">
+      <a href="https://www.designspiration.net/"><div style="display:inline-block; float:left; width:23%;margin:10px">Map</div></a>
+
+      <a href="https://www.designspiration.net/"><div style="display:inline-block; width:23%; margin:10px">Textery</div></a>
+
+      <a href="https://www.designspiration.net/"><div style="display:inline-block; float:right;width:25%; margin:10px">Tumblbug</div></a>
+  </div>
+  <p>기존의 글에서 추출하거나 직접 기술한 <a href="https://www.designspiration.net/">‘한 문장(sentence)’</a>은 작업의 출발점이 되어, 작가들의 독립적인 한 문장이 모두 모였을 때 하나의 ‘단락(paragraph)’을 구성합니다.
+<br><br>
+만들어진 단락은 문맥상 연결되지 않지만, 이로 인해 역설적으로 작가 개인의 한 문장 자체에 주목하게 됩니다. 동시에 단락은 전시의 제목이 되어 모든 작가의 문장을 왜곡 없이 포괄합니다.
+‘한 문장’을 통해 작가들의 ‘작품(artwork)’
+<br><br>
+하나하나에 주목하며, ‘단락’으로 통일된 시각 아이덴티티를 가진 ‘전시(exhibition)’를 선보입니다.</p>
+</body>
+</html>
